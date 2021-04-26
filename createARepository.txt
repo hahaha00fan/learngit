@@ -1,0 +1,22 @@
+1.创建一个版本库非常简单，首先，选择一个合适的地方，创建一个空目录：
+
+ $ mkdir learngit
+ $ cd learngit
+ $ pwd
+ /Users/michael/learngit
+
+2.通过git init命令把这个目录变成Git可以管理的仓库：
+
+ $ git init
+ Initialized empty Git repository in /Users/michael/learngit/.git/
+
+3.用命令git add告诉Git，把文件添加到仓库：
+
+ $ git add readme.txt
+
+4.用命令git commit告诉Git，把文件提交到仓库：
+
+ $ git commit -m "wrote a readme file"
+ [master (root-commit) eaadf4e] wrote a readme file
+  1 file changed, 2 insertions(+)
+  create mode 100644 readme.txt
