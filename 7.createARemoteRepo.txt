@@ -1,0 +1,24 @@
+1.登录github，在github上创建一个仓库
+
+2.在本地的learngit仓库下运行命令，将远程仓库和本地仓库关联上，并取名远程仓库origin
+
+ $ git remote add origin git@github.com:michaelliao/learngit.git
+
+添加后，远程库的名字就是origin，这是Git默认的叫法，也可以改成别的，但是origin这个名字一看就知道是远程库
+
+3.把本地库的所有内容推送到远程库
+
+ $ git push -u origin master
+
+Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令
+
+4.从现在起，只要本地作了提交，就可以通过命令
+
+ $ git push origin master
+ 
+5.如果添加的时候地址写错了，或者就是想删除远程库，可以用git remote rm <name>命令。使用前，建议先用git remote -v查看远程库信息
+
+ $ git remote -v
+ origin  git@github.com:michaelliao/learn-git.git (fetch)
+ origin  git@github.com:michaelliao/learn-git.git (push)
+ $ git remote rm origin

@@ -1,0 +1,15 @@
+1.用命令git clone克隆一个本地库
+
+ $ git clone git@github.com:michaelliao/gitskills.git
+ Cloning into 'gitskills'...
+ remote: Counting objects: 3, done.
+ remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 3
+ Receiving objects: 100% (3/3), done.
+ 
+2.进入gitskills目录看看，已经有README.md文件了
+ $ cd gitskills
+ $ ls
+ README.md
+ 
+GitHub给出的地址不止一个，还可以用https://github.com/michaelliao/gitskills.git这样的地址
+Git支持多种协议，包括https，但ssh协议速度最快。
