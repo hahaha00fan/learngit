@@ -16,9 +16,20 @@ Git不但会把本地的master分支内容推送的远程新的master分支，�
 
  $ git push origin master
  
+把本地master分支的最新修改推送至GitHub，现在，你就拥有了真正的分布式版本库！
+ 
 5.如果添加的时候地址写错了，或者就是想删除远程库，可以用git remote rm <name>命令。使用前，建议先用git remote -v查看远程库信息
 
  $ git remote -v
  origin  git@github.com:michaelliao/learn-git.git (fetch)
  origin  git@github.com:michaelliao/learn-git.git (push)
  $ git remote rm origin
+ 
+6.用命令git clone克隆一个本地库
+
+ $ git clone git@github.com:michaelliao/gitskills.git
+
+7.然后进入gitskills目录看看，已经有README.md文件了
+
+ $ cd gitskills
+ $ ls
