@@ -1,0 +1,23 @@
+1.创建dev分支,并切换到dev分支
+
+ $ git switch -c dev
+ 
+2.查看当前分支
+
+ $ git branch
+ 
+3.切换分支
+
+ $ git switch master
+ 
+4.合并分支
+
+ $ git merge dev
+ 
+5.删除分支
+
+ $ git branch -d dev
+ 
+6.创建分支
+
+ $ git branch dev

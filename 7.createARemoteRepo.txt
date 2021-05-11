@@ -25,11 +25,3 @@ Git不但会把本地的master分支内容推送的远程新的master分支，�
  origin  git@github.com:michaelliao/learn-git.git (push)
  $ git remote rm origin
  
-6.用命令git clone克隆一个本地库
-
- $ git clone git@github.com:michaelliao/gitskills.git
-
-7.然后进入gitskills目录看看，已经有README.md文件了
-
- $ cd gitskills
- $ ls
