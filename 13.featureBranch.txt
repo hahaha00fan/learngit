@@ -1,0 +1,32 @@
+1.每添加一个新功能，最好新建一个feature分支，在上面开发，完成后，合并，最后，删除该feature分支
+
+2.你终于接到了一个新任务：开发代号为Vulcan的新功能，该功能计划用于下一代星际飞船
+
+ $ git switch -c feature-vulcan
+ 
+3.开发完毕
+
+ $ git add vulcan.py
+ $ git status
+ On branch feature-vulcan
+ Changes to be committed:
+   (use "git reset HEAD <file>..." to unstage)
+
+	 new file:   vulcan.py
+
+ $ git commit -m "add feature vulcan"
+ [feature-vulcan 287773e] add feature vulcan
+  1 file changed, 2 insertions(+)
+  create mode 100644 vulcan.py
+ 
+4.切回dev，准备合并
+
+ $ git switch dev
+ 
+5.一切顺利的话，feature分支和bug分支是类似的，合并，然后删除
+
+6.因经费不足，新功能必须取消，Git友情提醒，feature-vulcan分支还没有被合并，如果删除，将丢失掉修改，如果要强行删除，需要使用大写的-D参数。
+
+ $ git branch -D feature-vulcan
+
+ 
